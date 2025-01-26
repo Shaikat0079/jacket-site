@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacket</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .bebas-neue {
+        font-family: "Bebas Neue", serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bebas-neue">
     <header class="bg-[#FFFBF0]">
       <!-- Nav Start -->
       <nav></nav>
       <!-- Banner Start -->
-      <section class="md:flex items-center">
-        <article>
+      <section
+        class="grid px-5 justify-items-center lg:flex justify-between md:flex items-center"
+      >
+        <article class="lg:pr-72">
           <h1 class="text-7xl uppercase">
             <span class="text-stone-600/75"> This Website is a </span
             ><span class="text-orange-600/50">demo</span>
@@ -21,7 +34,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Accusantium, cumque.
           </p>
-          <button class="bg-green-300 px-8 py-5 rounded-xl flex items-center font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">
+          <button
+            class="bg-green-300 px-8 py-5 rounded-xl flex items-center font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
